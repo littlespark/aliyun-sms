@@ -8,3 +8,14 @@ composer require littlespark/aliyun-sms --dev
 
 示例代码请查看AliSms文件 
 
+
+```
+<?php
+
+use Aliyun\AliSms;
+
+//发送短信
+(new AliSms($accessKeyId, $accessKeySecret))->sendSms($signName, $templateCode, $phoneNumbers);
+
+```
+
